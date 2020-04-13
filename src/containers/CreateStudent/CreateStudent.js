@@ -300,8 +300,15 @@ class CreateStudent extends Component {
     validation = (e, formElementsArray) => {
         e.preventDefault();
 
-        if (this.state.formIsValid)
+        if (this.state.formIsValid) {
             this.props.onCreateStudent(e, this.state.createStudentForm);
+                
+                this.setState({
+                    ...this.state,
+                    ...initState
+                })
+           
+        }
         else {
             let err = '';
 
