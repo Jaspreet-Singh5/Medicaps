@@ -1,0 +1,14 @@
+.ViewSections {
+    margin-top: 12vh;
+}
+
+.ViewTableContainer {
+    width: 90%!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ViewTable {
+    font-size: 2rem!important;
+    text-align: center!important;
+}

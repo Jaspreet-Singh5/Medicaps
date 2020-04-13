@@ -1,0 +1,226 @@
+label {
+  color: #000000!important;
+  font-size: 1.4rem!important;
+}
+
+input, select {
+  font-size: 1rem!important;
+  color: #000000!important;
+  font-weight: 700!important;
+}
+
+input::placeholder {
+  font-weight: normal!important;
+}
+
+.Invalid {
+    border-bottom: 2px solid red!important;
+}
+
+.Valid {
+    border-bottom: 2px solid green!important;
+}
+
+
+.selectTwo {
+  width: 48%;
+  display: inline;
+}
+
+.btn {
+  /* border: 3px solid #1a1a1a; */
+  /* border-radius: 50px 50px 50px 50px; */
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background 600ms ease, color 600ms ease;
+  transition: background 600ms ease, color 600ms ease;
+  font-size: 1.2rem!important;
+  color: #fff!important;
+}
+
+input[type="radio"].toggle {
+  display: none;
+}
+input[type="radio"].toggle + label {
+  cursor: pointer;
+  min-width: 60px;
+}
+input[type="radio"].toggle + label:hover {
+  background: none;
+  color: #1a1a1a;
+}
+input[type="radio"].toggle + label:after {
+  border-radius: 5rem;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].toggle.toggleLeft + label {
+  border-right: 0;
+}
+input[type="radio"].toggle.toggleLeft + label:after {
+  left: 100%;
+}
+input[type="radio"].toggle.toggleRight + label {
+  margin-left: -5px;
+}
+input[type="radio"].toggle.toggleRight + label:after {
+  left: -100%;
+}
+input[type="radio"].toggle:checked + label {
+  cursor: default;
+  color: #fff;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+  /* border-radius: 5px; */
+}
+input[type="radio"].toggle:not(:checked) + label {
+  background-color: #EFF2F6;
+  color: #B3C3D6!important;
+  border-radius: 5rem;
+  /* border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem; */
+}
+
+input[type="radio"].toggle + label {
+  margin-bottom: 0!important;
+}
+
+input[type="radio"].toggle:checked + label:after {
+  left: 0;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+}
+.toggle-switch-checkbox {
+  display: none;
+}
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #ccc;
+  border-radius: 20px;
+  margin: 0;
+}
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.toggle-switch-inner::before, .toggle-switch-inner::after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 34px;
+  padding: 0;
+  line-height: 34px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.toggle-switch-inner:before {
+  content: "Yes";
+  text-transform: uppercase;
+  padding-left: 10px;
+  background-color: #f90;
+  color: #fff;
+}
+.toggle-switch-disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.toggle-switch-disabled::before {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.toggle-switch-inner::after {
+  content: "No";
+  text-transform: uppercase;
+  padding-right: 10px;
+  background-color: #ccc;
+  color: #fff;
+  text-align: right;
+}
+.toggle-switch-switch {
+  display: block;
+  width: 24px;
+  margin: 5px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  border: 0 solid #ccc;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0px;
+}
+
+.radioContainer {
+  display: inline;
+  width: fit-content;
+  float: right;
+  background-color: #49448E;
+  border-radius: 5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+div.MuiFormControl-root {
+  margin-left: 1rem!important;
+}
+
+.marginControl {
+  margin-left: 1rem!important;
+  margin-top: 2rem!important;
+}
+
+label,
+input {
+    /* color: #eee!important; */
+}
+
+label {
+  /* left: 2rem!important; */
+  font-size: 1rem!important;
+  text-transform: capitalize!important;
+}
+
+input[type='date'] {
+  text-transform: uppercase;
+}
+
+/*
+.MuiOutlinedInput-root {
+    position: relative;
+    border-radius: 50px;
+}
+*/
