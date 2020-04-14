@@ -47,15 +47,12 @@ export const createStudent = (e, form) => {
         console.log(data);
 
         axios.post( '/createStudent', data)
-            .then( (res, errors, msg) => { 
-                console.log(res);
-                console.log(errors);
-                console.log(msg);
+            .then( (res) => { 
                 dispatch(createStudentSuccess(res));
             } )
             .catch( err => {
-                console.log(err);
-                dispatch(createStudentFail(err));
+                console.log(err.response);
+                dispatch(createStudentFail(err.response));
             } );
     };
 };

@@ -302,12 +302,12 @@ class CreateStudent extends Component {
 
         if (this.state.formIsValid) {
             this.props.onCreateStudent(e, this.state.createStudentForm);
-                
-                this.setState({
-                    ...this.state,
-                    ...initState
-                })
-           
+            
+            this.setState({
+                ...this.state,
+                ...initState
+            })
+            
         }
         else {
             let err = '';
@@ -460,4 +460,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler((CreateStudent), axios));
+export default connect(mapStateToProps, mapDispatchToProps)((CreateStudent));
